@@ -1,0 +1,90 @@
+.custom-card {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 1rem !important;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.0em;
+    font-weight: bolder;
+}
+
+.title1 {
+    margin: 0;
+    font-size: 1.0em;
+    font-weight: bolder;
+    color: blue;
+    cursor: pointer;
+}
+
+.tick-icon {
+    margin-left: 240px;
+    justify-content: flex-end;
+    display: flex;
+    color: green;
+}
+
+.MuiCardActions-root {
+    display: flex;
+    justify-content: space-around;
+
+    .custom-button {
+        flex: 1;
+        text-transform: capitalize;
+        width: 100%;
+    }
+}
+
+
+.header {
+    background-color: #D1FFBD;
+    padding: 1rem;
+    color: black;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.card-header {
+    text-align: center;
+    color: white;
+    margin-top: 8rem;
+}
+
+@media(max-width:990px) {
+    .custom-card {
+        margin: .2rem;
+        width: 22rem;
+        height: 22rem;
+    }
+}
+
+@media(max-width:768px) {
+    .custom-card {
+        width: 19rem; 
+    }
+
+    .header {
+        padding: .5rem;
+        margin: 1rem;
+    }
+}
+
+@media(max-width:575px) {
+    .custom-card {
+        width: 20rem;
+    }
+
+    .header {
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    .card-header {
+        margin-top: 1rem;
+    }
+
+    .tick-icon {
+        margin-left: 190px;
+    }
+}

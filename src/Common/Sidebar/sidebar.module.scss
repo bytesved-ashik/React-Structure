@@ -1,0 +1,65 @@
+.sidebarMain {
+    background-color: black;
+    position: fixed;
+    padding-left: .3rem;
+    width: 15rem;
+    height: 100vh;
+    z-index: 100;
+    border-right: 1px solid grey;
+}
+
+.siderhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    padding: 1rem .5rem;
+}
+
+.arrowIcon {
+    display: none;
+}
+
+.menuItem {
+    color: grey;
+}
+
+.subMenuItem {
+    padding: .3rem 1rem;
+}
+
+.diffSection {
+    padding: 1rem 0rem;
+}
+
+.sidebarFotter {
+    position: absolute;
+    bottom: 0%;
+    width: 98%;
+    border-top: 1px solid grey;
+    padding: 1rem;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player {
+    display: flex;
+    align-self: center;
+}
+
+@media(max-width:990px) {
+    .sidebarMain {
+        right: -15rem;
+        transition: left .6s ease-in-out;
+    }
+    .open {
+        left: 0;
+        transition: left .6s ease-in-out;
+    }
+    .arrowIcon{
+        display: block;
+    }
+
+}

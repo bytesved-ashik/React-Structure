@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  width: calc(100% - 15rem);
+  padding: 1rem;
+  float: right;
+  // height: calc(100vh - 5rem);
+
+}
+
+.tableContainer {
+  background-color: black;
+  width: 28rem;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  color: white;
+  border: 1px solid white;
+  box-shadow: 6px 6px 10px rgba(135, 91, 91, 0.5);
+  
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: .6rem;
+}
+
+.subtitle {
+  font-size: 12px;
+  margin-bottom: .8rem;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.fieldLabel {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3A3B3C;
+  color: white;
+  height: 35px;
+}
+
+.datepicker {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3A3B3C;
+  color: white;
+}
+
+.createbutton button {
+  text-transform: capitalize;
+  background: linear-gradient(to right, orangered, blue);
+  ;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+}
+
+.buttonWrapper {
+  position: relative;
+  margin: 5px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: .3rem;
+  background: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeButton {
+  border-color: #1976d2;
+  color: #1976d2;
+}
+
+.tickIcon {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: white;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.active .tickIcon {
+  display: block;
+}
+
+.divider {
+  border-left: 2px solid #7e7878;
+  height: 85%;
+}
+
+@media (max-width:990px) {
+  .container {
+    width: 100%;
+    padding: .5rem;
+  }
+  .tableContainer{
+    margin: .2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0.5rem;
+    height: 100%;
+  }
+  .tableContainer {
+    width: 100%; 
+    margin: 0.2rem 0; 
+  }
+  .card_Last {
+    justify-content: center; 
+  }
+}

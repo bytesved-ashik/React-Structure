@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+.pageheader{
+    width: calc(100% - 15rem);
+    float: right;
+    height: 5rem;
+    border-bottom: 1px solid grey;
+    background-color: rgb(28, 27, 27);
+    padding:  1rem 1rem;
+}
+.notification{
+    padding: 0.5rem;
+    color: white;
+    float: right;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black
+}
+.menuIcon{
+    color: white;
+    display: none;
+}
+
+@media(max-width:990px){
+    .pageheader{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:  0 1rem;
+    }
+    .menuIcon{
+         display: block;
+    }
+}

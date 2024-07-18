@@ -1,0 +1,91 @@
+.getotp_Container {
+    display: flex;
+}
+
+.imgContainer {
+    height: 99vh;
+    width: 70%;
+}
+
+.heroimg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.otpSection {
+    box-sizing: border-box;
+    width: calc(100% - 70%);
+    padding: 5rem 3rem;
+    position: relative;
+}
+
+.secOtpElem {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+
+}
+
+.goggleBtn {
+    border-radius: .2rem;
+    width: 100%;
+    background-color: black;
+    color: rgb(241, 223, 223);
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.optFotter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    width: 80%;
+}
+
+@media(max-width:990px) {
+    .otpSection {
+        padding: 3rem 1rem;
+    }
+    .optFotter {
+        width: 90%;
+        p{
+            font-size: 10px;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .otpSection {
+        padding: 3rem .5rem;
+    }
+    .imgContainer {
+        width: 60%;
+    }
+    
+    .otpSection {
+        width: 40%;
+    }
+    .optFotter {
+        width: 95%;  
+    }
+
+}
+
+@media(max-width:575px) {
+    .imgContainer {
+        display: none;
+        
+    }
+    .otpSection {
+       width: 100%;
+       padding: 5rem 5rem;
+    }
+    .optFotter {
+        width: 70%;
+       
+    }
+
+}
